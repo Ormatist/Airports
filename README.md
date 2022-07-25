@@ -80,3 +80,90 @@ calculated. Each first-class seat takes up space for two standard-class seats.
 | Flight cost: 372.82 × (140 + 40)             | £67 107.60                   |
 | Flight income: 140 × 400 + 40 × 1200         | £56 000 + £48 000 = £104 000 |
 | Flight profit: 104 000 - 67 107.6            | £36 892.40                   |
+
+The program should work in the following way:
+
+1. The program should read in the comma separated file Airports.txt
+
+2. A menu should be displayed allowing the user to select from the following options:
+
+    - Enter airport details
+    - Enter flight details
+    - Enter price plan and calculate profit
+    - Clear data
+    - Quit
+  
+3. If the user selects the ‘Quit’ option then a suitable message should be displayed and the program
+ends.
+
+4. If the user selects the ‘Enter airport details’ option:
+
+    a. the user should be asked to enter the three-letter airport code for the UK airport
+  
+    b. if the code entered is not for Liverpool John Lennon (LPL) or Bournemouth International (BOH)
+then a suitable error message should be displayed and the user returned to the main menu
+
+    c. the user should then be asked to enter the three-letter airport code for the overseas airport
+  
+    d. the program should check that the code for the overseas airport is valid based on the data read
+from the csv file
+    • if the code for the overseas airport is valid then the full name of the overseas airport should be
+displayed
+    • if the code for the overseas airport is not valid then a suitable error message should be
+displayed
+
+    e. the user should be returned to the main menu.
+  
+5. If the user selects the ‘Enter flight details’ option:
+
+    a. the user should be asked to enter the type of aircraft to be used. The allowed types are shown
+in Figure 2
+
+    b. if the type of aircraft is not valid then a suitable error message should be displayed and the user
+returned to the main menu
+
+    c. the data in Figure 2 for that type of aircraft should then be displayed
+  
+    d. the user should then be asked to enter the number of first-class seats on the aircraft
+  
+    e. if the number of first-class seats entered is not 0 then:
+    
+    - if the number of first-class seats is less than the ‘minimum number of first-class seats’ then a
+suitable error message should be displayed and the user returned to the main menu
+    - if the number of first-class seats is greater than half the ‘capacity if all seats are standardclass’ then a suitable error message should be displayed and the user returned to the main
+menu.
+
+    f. the program should then calculate the number of standard-class seats on the aircraft using the
+formula:
+‘Capacity if all seats are standard-class – Number of first-class seats x 2’
+
+    g. the user should be returned to the main menu.
+    
+6. If the user selects the ‘Enter price plan and calculate profit’ option:
+
+    a. the program should check that codes for the UK and overseas airports have been entered. If not
+then a suitable error message should be displayed and the user returned to the main menu
+
+    b. the program should check if the type of aircraft has been entered. If not then a suitable error
+message should be displayed and the user returned to the main menu
+
+    c. the program should check that the number of first-class seats has been entered. If not then a
+suitable error message should be displayed and the user returned to the main menu
+
+    d. the program should check that the maximum flight range for the type of aircraft is greater than or
+equal to the distance between the airports. If not then a suitable error message should be
+displayed and the user returned to the main menu
+
+    e. the user should be asked to enter the price of a standard-class seat and the price of a first-class
+seat
+
+    f. the program should then calculate the flight cost per seat, flight cost, flight income and flight
+profit using the formulae shown in Figure 3
+
+    g. the results of these calculations should be displayed and the user returned to the main menu.
+
+7. If the user selects the ‘Clear data’ option:
+
+    - the program should clear all data that has been entered by the user and then return the user to
+the main menu.
+
