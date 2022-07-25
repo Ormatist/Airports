@@ -81,7 +81,7 @@ calculated. Each first-class seat takes up space for two standard-class seats.
 | Flight income: 140 × 400 + 40 × 1200         | £56 000 + £48 000 = £104 000 |
 | Flight profit: 104 000 - 67 107.6            | £36 892.40                   |
 
-The program should work in the following way:
+**The program should work in the following way:**
 
 1. The program should read in the comma separated file Airports.txt
 
